@@ -19,13 +19,13 @@ if (JavaVersion.current().isJava8Compatible()) {
 }
 
 dependencies {
-    api 'io.github.adempiere:investment-and-loan:3.9.4-develop-1.0'
+    api 'io.github.adempiere:investment-and-loan:3.9.4-develop-1.1'
 }
 
 sourceSets {
     main {
          java {
-            srcDirs = ['src']
+            srcDirs = ['src/main/java']
          }
     }
 }

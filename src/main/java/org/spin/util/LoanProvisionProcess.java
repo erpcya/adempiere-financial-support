@@ -10,18 +10,25 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,    *
  * 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA.                     *
  * For the text or an alternative of this public license, you may reach us    *
- * Copyright (C) 2003-2016 e-Evolution,SC. All Rights Reserved.               *
- * Contributor(s): Victor Perez www.e-evolution.com                           *
+ * Copyright (C) 2003-2014 E.R.P. Consultores y Asociados, C.A.               *
+ * All Rights Reserved.                                                       *
+ * Contributor(s): Yamel Senih www.erpya.com                                  *
  *****************************************************************************/
+package org.spin.util;
 
-package org.eevolution.freight.model.validator;
-
-import org.eevolution.model.FreightModelValidator;
+import org.spin.investment.model.MFMFunctionalSetting;
 
 /**
- * Support class of Adempiere freight functionality
+ * Loan Provision Calculation
+ * ProvisionAmt = (CapitalAmt + CurrentInterestAmt + CurrentDunningAmt) * ProvisionRate
  * @author Yamel Senih, ysenih@erpya.com , http://www.erpya.com
+ *      <li> FR [ 1847 ] Create Loan Provision
+ *		@see https://github.com/adempiere/adempiere/issues/1847
  */
-public class Freight  extends FreightModelValidator {
-	//	Just extend and use with new package
+public class LoanProvisionProcess extends org.spin.investment.loan.util.LoanProvisionProcess {
+
+	public LoanProvisionProcess(MFMFunctionalSetting setting) {
+		super(setting);
+	}
+	//	Backward compatibility
 }
