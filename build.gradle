@@ -19,7 +19,7 @@ if (JavaVersion.current().isJava8Compatible()) {
 }
 
 dependencies {
-    api 'io.github.adempiere:freight:3.9.4-develop-1.0'
+    api 'io.github.adempiere:investment-and-loan:3.9.4-develop-1.0'
 }
 
 sourceSets {
@@ -63,7 +63,7 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
         	groupId 'io.github.openls'
-            artifactId 'adempiere-freight-support'
+            artifactId 'investment-and-loan-support'
             version
            	from components.java
            	pom {
