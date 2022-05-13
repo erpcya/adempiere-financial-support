@@ -62,7 +62,7 @@ publishing {
     }
     publications {
         mavenJava(MavenPublication) {
-        	groupId 'io.github.openls'
+        	groupId 'io.github.adempiere'
             artifactId 'investment-and-loan-support'
             version
            	from components.java
